@@ -4,6 +4,7 @@ import { Routes, RouterModule, PreloadAllModules } from '@angular/router';
 import { VideoListPageComponent } from '../videos/pages/video-list-page/video-list-page.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { NotFoundPageComponent } from './pages/not-found-page/not-found-page.component';
+import { CustomPreloadingService } from './services/custom-preloading.service';
 
 const routes: Routes = [
     {
@@ -22,6 +23,7 @@ const routes: Routes = [
     {
         path: 'users',
         loadChildren: () => import('../users/users.module').then(m => m.UsersModule),
+        data: { preload: true }
     },
     {
         path: 'photos',
@@ -37,6 +39,7 @@ const routes: Routes = [
     imports: [RouterModule.forRoot(routes, {
         useHash: true,
         // preloadingStrategy: PreloadAllModules
+        preloadingStrategy: CustomPreloadingService
     })],
     exports: [RouterModule]
 })
