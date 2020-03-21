@@ -4,7 +4,7 @@
 
 ## Demo 🎉
 
-* <https://piecioshka.github.io/test-angular-preloading/>
+<https://piecioshka.github.io/test-angular-preloading/>
 
 ## Features
 
