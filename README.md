@@ -2,7 +2,7 @@
 
 :ledger: Test Angular app with "preloading routing strategy".
 
-## Demo 🎉
+## Preview 🎉
 
 <https://piecioshka.github.io/test-angular-preloading/>
 
