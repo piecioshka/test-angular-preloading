@@ -11,3 +11,7 @@
 * :white_check_mark: `Eager loading strategy`: Contact Module
 * :white_check_mark: `Lazy loading strategy`: Photos Module
 * :white_check_mark: `Preloading strategy`: Users Module
+
+## License
+
+[The MIT License](http://piecioshka.mit-license.org) @ 2026
